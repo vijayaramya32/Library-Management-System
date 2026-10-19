@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>update Member</title>
+</head>
+<body>
+
+	<h2>update member</h2>
+	
+	<form action ="/LibraryManagement/updateMember" method = "post">
+	
+		<select name = "update">
+			<option value = "phone">phone</option>
+			<option value = "address">address</option>
+		</select><br><br>
+	
+		memberId:
+		<input type = "text" name = "memberID"/><br><br>
+		
+		<label>Enter Value:</label>
+	    <input type="text" name="updateValue">
+	
+	    <br><br>
+		
+		<input type="submit" value="update member">
+	</form>
+
+</body>
+</html>

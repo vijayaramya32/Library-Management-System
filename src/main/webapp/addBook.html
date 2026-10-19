@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>Add Book</title> 
+	</head> 
+	<body> 
+		<h2>Add Book</h2> 
+		<form action="addBook" method="post"> 
+			<label>ISBN:</label> 
+			<input type="text" name="isbn" required> <br><br> 
+			
+			<label>Book Title:</label> 
+			<input type="text" name="bookTitle" required> <br><br>
+			 
+			<label>Author:</label> 
+			<input type="text" name="author" required> <br><br> 
+			
+			<label>Category:</label> 
+			<input type="text" name="category" required> <br><br> 
+			
+			<label>Price:</label> 
+			<input type="number" name="price" step="0.01" required> <br><br> 
+			
+			<label>Available Quantity:</label> 
+			<input type="number" name="availableQuantity" required> <br><br> 
+			
+			<label>Published Year:</label> 
+			<input type="number" name="publishedYear" required> <br><br> 
+			
+			<input type="submit" value="Add Book"> </form> </body> 
+		
+</html>
