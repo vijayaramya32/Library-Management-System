@@ -1,0 +1,218 @@
+
+#intro{
+	height:40px;
+	padding:30px 30px 20px 0px;
+	display: flex;
+	background-color: #4A2C2A;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header h1{
+	display:flex;
+	align-items:center;
+	color:white;
+}
+
+
+#headerImg{
+	width:140px;
+	height:125px;
+	
+}
+
+nav {
+	display: flex;
+    	gap: 20px;
+}
+
+nav a{
+	color:white;
+	text-decoration:none;
+	font-size:20px;
+}
+
+nav a:hover{
+	border:2px dotted;
+	border-radius:4px;
+	background-color:white;
+	color:black;
+	text-align:center;
+	
+}
+
+
+
+main{
+	display:flex;
+	justify-content:space-between;
+	 background-color: #FAF3E0;
+	
+}
+
+
+
+
+#outer{
+	
+	position:relative;
+	width:500px;
+	height:400px;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	margin-right:80px;
+	align-items:center;
+
+}
+
+
+
+#form{
+	width:300px;
+	height:200px;
+	border:5px ridge;;
+	border-radius:10px;
+	padding:20px;
+	background-color:white;
+	position:relative;
+	
+}
+
+
+
+.roleButtons{
+
+	display:grid;
+	grid-template-columns: auto auto;
+	gap:4px;
+	justify-content:center;
+	margin-bottom:7px;
+	
+}
+
+.roleButtons button{
+
+	background-color: rgb(26, 26, 102);
+	color:white;
+	font-weight: bold;
+	border:none;
+	border-radius:25px;
+	width:125px;
+	height:40px;
+
+}
+
+	
+
+#SectionImg{
+	width:475px;
+	height:400px;
+	position:relative;
+	right:50px;
+
+}
+
+section::after {
+	content:"Welcome to Our Library! \A Explore books, manage memberships, \A and 	keep track of issued and returned books.";
+    	font-size: 20px;
+	display: block;
+    	white-space: pre;
+	font-weight:bold;
+    	text-align: center;
+    	position:relative;
+	bottom:200px;
+	left:320px;
+   
+}
+
+.flex{
+	
+	display:grid;
+	grid-template-columns:100px 175px;
+}
+
+#forgot{
+	margin-top:-18px;
+	margin-right:22px;;
+	align-self:flex-end;
+}
+
+.login{
+
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	gap:10px;
+}
+
+.star{
+	color:red;
+}
+
+label{
+	font-size:20px;
+}
+
+.login a{
+	font-size:16px;
+}
+
+.login input[type="submit"] {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#user1{
+	position:absolute;
+	bottom:0px;
+	left:6px;
+	width:80px;
+	height:90px;
+}
+
+form img{
+	position:absolute;
+	bottom:-10px;
+	left:-30px;
+	width:80px;
+	height:90px;
+}
+
+marquee{
+	font-size:30px;
+	color:red;
+}
+
+label::after{
+	content: "*";
+	color:red;
+}
+footer{
+
+	position:fixed;
+	left:0;
+	right:0;
+	background-color: #4A2C2A;
+}
+
+footer p {
+	position:relative;
+	bottom:20px;
+	font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	color: #E6B566;
+	text-align:center;
+}
+
+	
+	

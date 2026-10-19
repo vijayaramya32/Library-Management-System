@@ -1,0 +1,187 @@
+#intro{
+    height:40px;
+    background-color: #4A2C2A;
+    display:flex;
+    justify-content:space-between;
+    padding:30px 30px 30px 0px;
+    align-items:center;
+}
+
+header h1{
+    display:flex;
+    align-items:center;
+    color:white;
+}
+
+#headerImg{
+
+    width:140px;
+    height:90px;
+}
+
+nav{
+
+    display:flex;
+    gap:20px;
+    position:relative;
+    left:50px;
+}
+
+
+nav a{
+
+    color:white;
+    font-size:20px;
+    text-decoration:none;
+}
+
+.active,nav a:hover{
+
+    color:black;
+    background-color:white;
+    border:2px transparent;
+    border-radius:10px;
+    padding-left:2px;
+    padding-right:2px;
+    padding-top:1px;
+    padding-bottom:1px;
+}
+
+main{
+    background-color: #FAF3E0;
+    display:grid;
+    gap:50px;
+    padding:10px;
+}
+
+#addMember{
+    display:flex;
+    justify-content:flex-end;
+}
+
+#addMember button{
+
+    width:180px;
+}
+
+button{
+
+    color:white;
+    background-color: blue;
+    width:125px;
+    height:25px;
+    font-size:14px;
+    font-weight:bold;;
+    padding:5px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+button:hover{
+    background-color:rgb(26, 26, 102);
+}
+
+#searchMember{
+
+    display:grid;
+    justify-content: center;
+
+}
+
+#searchMember form{
+
+    display:grid;
+    grid-template-columns:130px 80px 200px;
+    gap:20px;
+}
+
+#searchButton{
+
+    margin-left:100px;
+}
+
+table {
+    background-color: #FFFCF6;
+    border-collapse: collapse;
+    color: #243447;
+    width: 80%;
+    margin:auto;
+    margin-bottom:300px;
+}
+th {
+    background-color: #183B56;
+    color: #FFFFFF;
+    padding: 12px;
+    border: 1px solid #D5DFE5;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #D5DFE5;
+}
+footer{
+
+	position:fixed;
+	left:0;
+	right:0;
+    bottom:-25px;;
+	background-color: #4A2C2A;
+}
+
+footer p {
+	position:relative;
+	bottom:3px;
+	font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    font-weight: bold;  
+	color: #E6B566;
+    letter-spacing: 1px;
+	text-align:center;
+}
+
+.profile-icon {
+
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+
+}
+
+#profileContainer{
+    position: relative;
+    right: 0;
+    display:flex;
+    flex-direction: column;
+}
+
+.profile-dropdown{
+    position:absolute;
+    display:none;
+    right: 0;
+    left:50%;
+    bottom:-140%;
+    transform:translateX(-28%);
+    width: 120px;
+    padding: 10px;
+}
+
+#logoutButton{
+    border: none;
+    background: none;
+    cursor: pointer;
+    width:70px;
+   
+}
+
+#logoutButton:hover {
+    background: #f2f2f2;
+}
+
+#profileContainer:hover .profile-dropdown {
+    display: block;
+}
+
+
+
+
+

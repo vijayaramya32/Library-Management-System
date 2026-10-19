@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ReturnBookStyles.css">
+    <title>Return Book</title>
+</head>
+<body>
+     <header>
+		<div id="intro">
+			<h1 ><img id = "headerImg" src="../../images/book1.png" />Library Management System</h1>
+			<nav>
+				<a href="../Home/Home.html">Home</a>
+				<a href="../BookManagement/BookManagement.html" class="active">BookManagement</a>
+				<a href="../MemberManagement/MemberManagement.html">Member Management</a>
+				<a href="../IssueManagement/IssueManagement.html">Issue Management</a>
+            </nav>
+            <div id="profileContainer">
+				<div class="profile_icon" id="profileIcon">
+					👤
+				</div>
+                
+                <div class="profile-dropdown" id="profileDropdown">
+					<Button id="logoutButton">logout</Button>
+				</div>
+			</div>
+		</div>
+			
+	</header>
+    <main>
+        <div id="returnBook">
+            <h2>Return Book</h2>
+            <!-- <form id="issueForm"> -->
+            <div id="searchIssue">
+                <form method = "get">   
+                    <div id="input">
+                        <label for="inputValue">Member ID:</label>
+                        <input type = "text" id = "inputValue" name = "inputValue"/>
+                    </div>
+                    <div id = "button">
+                        <button id="searchButton" type="button">search</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="issueTable" class="hidden">
+                <table>
+                    <thead>
+                        <th><input type="checkbox" name="issueIds" id="selectAll"/></th>
+                        <th>Issue ID</th>
+                        <th>Member Name</th>
+                        <th>Book Name</th>
+                        <th>Issue Date</th>
+                        <th>Due date</th>
+                        <th>Return Date</th>
+                        <th>staus</th>
+                    </thead>
+
+                    <tbody id="issueBooks">
+
+                    </tbody>
+                </table>
+
+                <div id="btn">
+                    <button onclick="returnBooks()" type="button">Return Books</button>
+
+                </div>
+            </div>
+
+            
+
+            <!-- <div class="memberSearch">
+                <input type = "text" id ="memberId" name="memberID" placeholder="Enter Member ID" list="members"/>
+                <datalist id="members" name="members">
+                    <option>select member name</option>
+                </datalist>
+            </div>
+
+            <div class = "bookSearch">
+                <input type = "text" id="IssueId" name = "issueID" placeholder="Enter Issue ID" list="issueBooks"/>
+                <datalist id="issueBooks" name="books">
+                    <option>select Book Name</option>
+                </datalist>
+            </div> -->
+
+            
+
+            <!-- <input type = "submit" id="returnButton" value="Return Book"/> -->
+        <!-- </form> -->
+        </div>
+    </main>
+    <script src="ReturnBookScript.js"></script>
+    
+</body>
+</html>

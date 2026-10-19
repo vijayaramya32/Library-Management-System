@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ReturnBookStyles.css">
+    <title>Book Issue</title>
+</head>
+<body>
+
+    <header>
+		<div id="intro">
+			<h1 ><img id = "headerImg" src="../../images/book1.png" />Library Management System</h1>
+			<nav>
+				<a href="../Home/Home.html">Home</a>
+				<a href="../BookManagement/BookManagement.html" class="active">BookManagement</a>
+				<a href="../MemberManagement/MemberManagement.html">Member Management</a>
+				<a href="../IssueManagement/IssueManagement.html">Issue Management</a>
+            </nav>
+            <div id="profileContainer">
+				<div class="profile_icon" id="profileIcon">
+					👤
+				</div>
+                
+                <div class="profile-dropdown" id="profileDropdown">
+					<Button id="logoutButton">logout</Button>
+				</div>
+			</div>
+		</div>
+			
+	</header>
+    <main>
+        <div id="issueBook">
+            <h2>Book Issue</h2>
+            <!-- <form id="issueForm"> -->
+                <div id="booksTable" class="hide">
+                        <div id="searchIssue">
+                                <form method = "get">   
+                                        <div id="input">
+                                            <label for="inputValue">Member ID:</label>
+                                            <input type = "text" id = "inputValue" name = "inputValue"/>
+                                         </div>
+                                </form>
+                        </div>
+                    <table>
+                        <thead>
+                            <th>select book</th>
+                            <th>Book ID</th>
+                            <th>ISBN</th>
+                            <th>Book Title</th>
+                            <th>Author</th>
+                            <th>category</th>
+                            <th>proce</th>
+                            <th>available quantity</th>
+                            <th>status</th>
+                        </thead>
+
+                        <tbody id="books">
+
+                        </tbody>
+
+                    </table>
+                    <div id = "btn">
+                        <button onclick="issueBook()"  type="button">Issue Books</button>
+                    </div>
+            </div>
+
+            <div id="issueTable" class="hidden">
+                <table>
+                    <thead>
+                        <th>Issue ID</th>
+                        <th>Member Name</th>
+                        <th>Book Name</th>
+                        <th>Issue Date</th>
+                        <th>Due date</th>
+                        <th>Return Date</th>
+                        <th>staus</th>
+                    </thead>
+
+                    <tbody id="issueBookBody">
+
+                    </tbody>
+                </table>
+
+                </div>
+
+            <!-- <div class = "bookSearch">
+                <input type = "text" id="bookId" name = "bookID" placeholder="Enter Book ID" list="books"/>
+                <datalist id="books" name="books">
+                    <option>select Book Name</option>
+                </datalist>
+            </div>
+
+            <div class="memberSearch">
+                <input type = "text" id ="memberId" name="memberID" placeholder="Enter Member ID" list="members"/>
+                <datalist id="members" name="members">
+                    <option>select member name</option>
+                </datalist>
+            </div> -->
+
+            <!-- <input type = "submit" id="issueButton" value="IssueBook"/> -->
+        <!-- </form> -->
+    </div>
+    <script src="IssueBookScript.js"></script>
+    
+</body>
+</html>

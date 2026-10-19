@@ -1,0 +1,45 @@
+<!--1.	Create a registration form where users enter their username, email, and password. 
+The label elements should be properly linked to their respective input fields using 
+the suitable attributes, and the mandatory attributes should be set for each input.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "..RegistrationFormStyle.css">
+    <title>Registration Form</title>
+</head>
+<body>
+	<div id = "outer">
+		<h2>Create Account</h2>
+		<Form>
+			<div class = "grid">
+				<span class = "*">*</span>
+				<label for = "userName">UserName: </label>
+        				<input type = "text" name = "username" id = "userName"  required/><br>
+			</div>
+			
+			<div class = "grid">
+				<span class = "star">*</span>
+        				<label for = "email">Email: </label>
+        				<input type = "text" name = "email" id = "email" required/><br>
+			</div>
+			
+			<div class = "grid">
+				<span class = "star">*</span>
+        				<label for  = "password">password: </label>
+        				<input type = "password" name = "password" id = "password" required/><br>
+			</div>
+
+        			<input type = "submit" value = "Register"  id = "button"/><br>
+
+			<div id = "login">
+				<span>Already have an account?</span>
+				<a href= "LibraryManagementLoginPage.html">Login</a>
+			</div>
+    		</Form>
+	</div>
+    
+</body>
+</html>

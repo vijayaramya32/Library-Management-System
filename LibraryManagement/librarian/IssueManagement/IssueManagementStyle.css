@@ -1,0 +1,190 @@
+#intro{
+    height:40px;
+    background-color: #4A2C2A;
+    display :flex;
+    justify-content:space-between;
+    padding: 30px 30px 30px 0px;
+    align-items:center;
+}
+header h1{
+    display:flex;
+    align-items:center;
+    color:white;
+}
+
+#headerImg{
+
+    height:90px;
+    width:140px;
+}
+
+nav {
+
+    display:flex;
+    gap:20px;
+    
+}
+nav a {
+
+    color:white;
+    font-size:20px;
+    text-decoration:none;
+    position:relative;
+    left:50px;
+}
+
+
+
+.active,nav a:hover{
+    border:2px transparent;
+    border-radius:10px;
+    color:black;
+    padding-left:2px;
+    padding-right:2px;
+    padding-top:1px;
+    padding-bottom:1px;
+    background-color:white;
+}
+
+
+main section{
+    padding:10px;
+    display:grid;
+    gap:50px;
+    background-color: #FAF3E0;
+}
+
+
+table {
+    background-color: #FFFCF6;
+    border-collapse: collapse;
+    color: #243447;
+    width: 80%;
+    margin:auto;
+    margin-bottom:300px;
+}
+th {
+    background-color: #183B56;
+    color: #FFFFFF;
+    padding: 12px;
+    border: 1px solid #D5DFE5;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #D5DFE5;
+}
+
+#searchIssue{
+
+    display:grid;
+    justify-content:center;
+}
+
+#searchIssue form{
+
+    display:grid;
+    grid-template-columns:130px 50px 200px;
+    gap:10px;
+
+}
+
+.search{
+
+    display:flex;
+}
+
+#Issuereturn{
+    display:flex;
+    justify-content: center;
+}
+
+.issueReturn{
+    height:32px;
+}
+button{
+    color:white;
+    background-color: blue;
+    width: 125px;
+    height:25px;
+    padding:2px;
+    margin-left:5px;
+    margin-top:40px;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    font-weight:bold;
+}
+button:hover{
+    background-color:rgb(26, 26, 102);
+}
+
+#searchButton{
+    margin-left:120px;
+}
+footer{
+
+	position:fixed;
+	left:0;
+	right:0;
+    bottom:-25px;;
+	background-color: #4A2C2A;
+}
+
+footer p {
+	position:relative;
+	bottom:8px;
+	font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+	color: #E6B566;
+	text-align:center;
+}
+
+.profile-icon {
+
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+
+}
+
+#profileContainer{
+    position: relative;
+    right: 0;
+    display:flex;
+    flex-direction: column;
+}
+
+.profile-dropdown{
+    position:absolute;
+    display:none;
+    right: 0;
+    left:50%;
+    bottom:-140%;
+    transform:translateX(-28%);
+    width: 120px;
+    padding: 10px;
+}
+
+#logoutButton{
+    border: none;
+    background: none;
+    cursor: pointer;
+    width:70px;
+   
+}
+
+#logoutButton:hover {
+    background: #f2f2f2;
+}
+
+#profileContainer:hover .profile-dropdown {
+    display: block;
+}
+
+
+
+
+

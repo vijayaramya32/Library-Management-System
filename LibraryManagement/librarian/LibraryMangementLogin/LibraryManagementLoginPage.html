@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Login page</title>
+		<link rel = "stylesheet"  href="LibraryManagementLoginPage.css">
+		<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header id = "intro">
+			<h1 ><img id = "headerImg" src="../../images/book1.png" />Library Management System</h1>
+			
+			<!-- <nav>
+				<a href="../Home/Home.html">Home</a>
+				<a href="../BookManagement/BookManagement.html">Book Management</a>
+				<a href="../MemberManagement/MemberManagement.html">Member Management</a>
+				<a href="../IssueManagement/IssueManagement.html">Issue Management</a>
+			</nav> -->
+			
+		</header>
+		<marquee>WELCOME TO OUR LIBRARY</marquee>
+		<main>
+			<section>
+				<img  id = "SectionImg" src= "../../images/library.png" alt = "logo.png"/>
+			</section>
+			<aside>
+				<div id = "outer">
+					
+					
+					<h1>Login Form</h1>
+		
+					<form method="post" id="loginForm">
+					
+
+						<div id="form">
+							<div class = "flex">
+								<label for="userName">Name: </label>
+								<input type="text" id="userName" name="userName" required><br>
+							</div>
+						
+							<div class = "flex">
+								
+								<label for="password">password: </label>
+								<input type="password" id="password" name="password" required><br>
+							</div>
+							
+							<div class = "login">
+								<a href = "#" id = "forgot">forgot password</a>
+								<input type = "submit" value ="login">
+								<span> or</span>
+								<a href = "Registration_form.html">Create Account</a>
+							</div>
+
+							<img src="../../images/user1.png" id = "user1"/>
+							<img src="../../images/user.png"/>
+
+						</div>
+						<p id="errorMessage"></p>
+					
+					</form>
+					
+				</div>
+			</aside>
+		</main>
+		<footer>
+			<p>Developed by Vijaya Ramya Maddipudi</p>
+		</footer>
+		<script src="LibraryManagementLoginScript.js"></script>
+	</body>
+</html>
